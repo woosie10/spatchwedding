@@ -1,0 +1,589 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #5f6062;
+	font-size: 14px;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	font-weight: 400;
+	color: #1B3446;
+
+}
+
+.row {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+a{
+	cursor:pointer;
+}
+
+.center-text{
+	text-align: center;
+}
+
+
+.page-inner{
+	margin: 90px 0 20px 0;
+	padding: 30px 5%;
+	background-color: #eee;
+	/*border-bottom: 1px solid #1B3446;*/
+}
+
+.page-inner_2{
+	margin: 90px 0 100px 0;
+	padding: 30px 5% 0 5%;
+	background-color: #eee;
+	/*border-bottom: 1px solid #1B3446;*/
+}
+
+.page-inner_3{
+	margin: 90px 0 100px 0;
+	padding: 30px 5% 30px 5%;
+	background-color: #eee;
+	/*border-bottom: 1px solid #1B3446;*/
+}
+
+.loadingText{
+	color: #1B3446;
+	margin: 50px 0 50px 0;
+}
+
+.popupBkgd{
+  width: 100%;
+  background-color: rgba(200, 200, 200, 0.7);
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.popupBox{
+  background-color: #fff;
+  border-top: 1px solid #1B3446;
+  border-bottom: 1px solid #1B3446;
+  border-radius: 4px;
+  margin-top: 100%;
+  height: 160px;
+}
+
+
+/*  Nav  */
+
+.navbar-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #1B3446;
+  margin: 28px 5%;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.navbar-toggle:hover {
+  background-color: #f0f0e8;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #1B3446;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 10px solid #FFFE8C;
+}
+
+.navbar-nav li{
+	font-size: 120%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #1B3446;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #9c9da0;
+  background-color: #fff;
+  font-weight: 400;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #9c9da0;
+  font-weight: 400;
+}
+
+
+.animate-bounce {
+  animation: bounce 1.5s 1.5s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: .7; }
+  60% { transform: scale(0.6); opacity: 1; }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-slide{
+	animation: slide 0.5s;
+}
+
+@keyframes slide {
+  0% { transform:translateY(-400px); }
+  100% { transform:translateY(0); }
+}
+
+.animate-appear{
+	animation: appear 1.5s;
+}
+
+@keyframes appear {
+  0% { transform:scale(0); }
+  50% { transform:scale(0); }
+  100% { transform:appear(1); }
+}
+
+.titleBar{
+	width: 100%;
+	padding: 10px 0 0 0;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	background-color: #fff;
+	color: #1B3446;
+	/*border-bottom: 1px solid #FDD600;*/
+	border-bottom: 10px solid #FFFE8C;
+}
+
+.title{
+	display: inline-block;
+	font-size: 200%;
+	font-weight: 400;
+	text-align: center;
+	color: #1B3446;
+	width: 100%;
+}
+
+.titleDate{
+	display: inline-block;
+	font-size: 100%;
+	font-weight: 400;
+	text-align: center;
+	color: #1B3446;
+	width: 100%;
+  padding-bottom: 20px;
+}
+
+
+/*  Home  */
+
+.coverPhoto{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+  	background: url(../images/coverPhoto_2_1.jpg) no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	display: inline-block;
+}
+
+.coverPhoto img{
+	max-height: 100%;
+  	max-width: 100%;
+}
+
+.coverBox{
+	background-color: #fff;
+	opacity: 0.9;
+	padding: 10px 5px;
+	width: 100%;
+	position: absolute;
+	bottom: 120px;
+	border-top: 1px solid #1B3446;
+	border-bottom: 1px solid #1B3446;
+}
+
+.coverText{
+	color: #1B3446;
+	text-align: center;
+	font-size: 110%;
+}
+
+.coverText2{
+	color: #1B3446;
+	text-align: center;
+	font-size: 130%;
+}
+
+.rsvpBtnContainer{
+	width: 100%;
+	padding: 20px 0 34px 0;
+	position: absolute;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.btn-default {
+  color: #1B3446;
+  border-color: #444;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  color: #1B3446;
+  background-color: #e7e7e7;
+  border-color: #444;
+}
+
+.rsvpBtn{
+	padding: 8px 30px;
+	font-size: 120%;
+	font-weight: 400;
+	border: 1px solid #1B3446;
+	opacity: 0.9;
+}
+
+
+/*  RSVP  */
+
+.form-control {
+	border: 1px solid #1B3446;
+	color: #1B3446;
+	background-color: #fff;
+}
+
+.form-control:focus {
+  	border-color: #1B3446;
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.1),0 0 8px rgba(27, 52, 70,.6);
+  	box-shadow: inset 0 1px 1px rgba(0,0,0,.1),0 0 8px rgba(27, 52, 70,.6);
+}
+
+.form-horizontal .control-label {
+  	padding-top: 7px;
+  	font-weight: 400;
+    font-size: 110%;
+}
+
+.radio-label{
+	padding: 7px 10px 0 10px;
+  	text-align: right;
+        font-size: 110%;
+        font-weight: 400;
+}
+
+input[type=radio]{
+	margin-top: 7px;
+	margin-right: 2%;
+  	text-align: left;
+}
+
+.attending{
+  margin: 10px 0 10px 0;
+}
+
+
+.rsvpBtnContainer_2{
+	margin: 5px 0 50px 0;
+	display: inline-block;
+  	width: 100%;
+}
+
+.error {
+  border: 1px solid #ff0000;
+}
+
+.errorMessage {
+  margin: 5px 0 0 10px;
+  color: #ff0000;
+  width: 95%;
+}
+
+  .errorAttending{
+    text-align: center;
+  }
+
+.submissionMessage{
+  font-size: 120%;
+  margin-top: 35px;
+}
+
+.submissionBtn{
+  font-size: 130%;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.emailLink{
+  margin: 40px 0 0 0;
+  font-size: 110%;
+}
+
+
+/*  Wedding Party  */
+
+.wpContainer{
+	padding: 0 1%;
+	margin-bottom: 40px;
+}
+
+.wpPhotoContainer{
+	padding: 0 20%;
+}
+
+.wpPhoto{
+	width: 100%;
+	border: 2px solid #1B3446;
+}
+
+.wpTextContainer{
+	position: relative;
+	min-height: 60px;
+}
+
+.wpTextRole{
+	text-align: center;
+	width: 100%;
+	margin: 0 0 15px 0;
+	font-size: 150%;
+	position: absolute;
+    bottom: 0;
+}
+
+.wpTextName{
+	text-align: center;
+	width: 100%;
+	margin: 15px 0 0;
+	font-size: 150%;
+}
+
+
+/* Itinerary  */
+
+.itnHeaderContainer{
+ 	border-bottom: 1px solid #1B3446;
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+ 	padding-top: 10px;
+ 	padding-bottom: 30px;
+ }
+
+ .itnHeader{
+ 	float: left;
+ 	font-size: 150%;
+ }
+
+ .itnTime{
+ 	float: left;
+ 	padding-top: 5px;
+ 	font-size: 120%;
+ }
+
+
+ /*  Gift List  */
+
+ .giftLogo img{
+ 	width: 40%;
+ 	margin-bottom: 30px;
+ }
+
+
+
+/*  Location  */
+
+map {
+	height: 440px;
+	margin-bottom: 30px;
+	border: 1px solid #1B3446;
+}
+
+.location{
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+
+.locationHeader{
+	font-size: 150%;
+	font-weight: 400;
+}
+
+.locationAddress{
+	font-size: 110%;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.hotels{
+	padding: 0 0 70px 0;
+}
+
+.hotelRow{
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #1B3446;
+}
+
+.hotelRow2{
+	padding: 10px 0 15px 0;
+}
+
+
+@media (min-width: 768px) {
+  
+  .popupBox{
+    border: 1px solid #1B3446;
+    margin-top: 20%;
+  }
+
+	.navbar-toggle {
+	  display: inline-block;
+	}
+
+	.navbar-header {
+  		float: none;
+	}
+
+	.navbar-nav{
+		margin: 0 0.5%;
+		width: 100%;
+	}
+
+	.navbar-nav li{
+		width: 16.5%;
+	}
+
+	.navbar-nav>li>a {
+	  padding-top: 45px;
+	  padding-bottom: 0;
+	  height: 110px
+	}
+
+	.title{
+		font-size: 300%;
+	}
+
+	.navbar-toggle {
+	  margin: 38px 5%;
+	}
+
+	@keyframes show {
+	  0% { transform:translateY(-150px); }
+	  100% { transform:translateY(0); }
+	}
+
+	.page-inner{
+		margin: 110px 0 20px 0;
+		padding: 60px 15%;
+	}
+
+	.page-inner_2{
+		margin: 110px 0 150px 0;
+		padding: 60px 15% 0 15%;
+	}
+	
+	.page-inner_3{
+		margin: 80px 0 150px 0;
+		padding: 60px 15% 40px 15%;
+	}
+
+	.coverBox{
+		width: 60%;
+		left: 20%;
+		border: 1px solid #1B3446;
+		bottom: 180px;
+		border-radius: 4px;
+	}
+
+	.coverText{
+		font-size: 130%;
+	}
+
+	.coverText2{
+		font-size: 170%;
+		font-weight: 400;
+	}
+	
+	
+  .attending{
+    margin: 0 0 30px 0;
+  }
+
+	.rsvpBtnContainer{
+		padding: 30px 0 67px 0;
+	}
+
+	.rsvpBtn{
+		font-size: 170%;
+		font-weight: 400;
+	}
+	
+	.errorMessage {
+    width: 110%;
+  }
+  
+  .errorAttending{
+    text-align: left;
+  }
+
+	.wpContainer{
+		padding: 0 1%;
+	}
+
+	.itnTime{
+	 	text-align: center;
+	 	padding-right: 0;
+	}
+
+	.giftLogo img{
+	 	width: 22%;
+	 	margin-bottom: 60px;
+	 }
+
+	.location{
+		text-align: left;
+		margin: 20px auto 20px auto;
+	}
+
+	map {
+		margin-bottom: 60px;
+	}
+	
+	.hotelRow{
+  	padding: 15px 0 15px 0;
+  }
+  
+  .hotelRow2{
+  	padding: 0 0 15px 0;
+  }
+
+}
+
+
+@media (min-width: 1250px) {
+	
+
+	.navbar-nav{
+		margin: 0 20%;
+	}
+
+	.navbar-nav li{
+		width: 10%;
+	}
+
+	.coverBox{
+		width: 40%;
+		left: 30%
+	}
+
+}
+
